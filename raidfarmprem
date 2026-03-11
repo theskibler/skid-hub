@@ -1,0 +1,86 @@
+cal RunService = game:GetService("RunService")
+local HeartbeatConnection = RunService.Heartbeat:Connect(function(deltaTime)
+end)
+task.wait()
+HeartbeatConnection:Disconnect()
+local TweenService = game:GetService("TweenService")
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local v1 = game:GetService("RunService")
+local VirtualInputManager = game:GetService("VirtualInputManager")
+local HttpService = game:GetService("HttpService")
+local LocalPlayer = Players.LocalPlayer
+local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
+loadstring(""https://pastebin.com/raw/m95MZdGX, "")
+-- Dumped loadstring content to: dumped_loadstring_1.lua
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "NoAccess"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.Parent = PlayerGui
+local Frame = Instance.new("Frame", ScreenGui)
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BackgroundTransparency = 0
+Frame.BorderSizePixel = 0
+Frame.ZIndex = 1
+local TextLabel = Instance.new("TextLabel", ScreenGui)
+TextLabel.Size = UDim2.new(1, -80, 0, 120)
+TextLabel.Position = UDim2.new(0, 40, 0.5, -140)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 100
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.TextXAlignment = Enum.TextXAlignment.Center
+TextLabel.ZIndex = 2
+local v2 = Instance.new("TextLabel", ScreenGui)
+v2.Size = UDim2.new(1, -80, 0, 40)
+v2.Position = UDim2.new(0, 40, 0.5, 20)
+v2.BackgroundTransparency = 1
+v2.Text = ""
+v2.TextColor3 = Color3.fromRGB(160, 160, 160)
+v2.TextSize = 26
+v2.Font = Enum.Font.Gotham
+v2.TextXAlignment = Enum.TextXAlignment.Center
+v2.ZIndex = 2
+task.spawn(function()
+    TextLabel.Text = "S"
+    task.wait(0.1)
+    TextLabel.Text = "Si"
+    task.wait(0.1)
+    TextLabel.Text = "Sig"
+    TextLabel.Text = "Sigh"
+    TextLabel.Text = "Sigh."
+    TextLabel.Text = "Sigh.."
+    TextLabel.Text = "Sigh..."
+    v2.Text = "t"
+    v2.Text = "th"
+    v2.Text = "thi"
+    v2.Text = "this"
+    v2.Text = "this "
+    v2.Text = "this i"
+    v2.Text = "this is"
+    v2.Text = "this is "
+    v2.Text = "this is a"
+    v2.Text = "this is a "
+    v2.Text = "this is a s"
+    v2.Text = "this is a sc"
+    v2.Text = "this is a scr"
+    v2.Text = "this is a scri"
+    v2.Text = "this is a scrip"
+    v2.Text = "this is a script"
+    v2.Text = "this is a script f "
+    v2.Text = "this is a script fo"
+    v2.Text = "this is a script for"
+    v2.Text = "this is a script for f "
+    v2.Text = "this is a script for fr"
+    v2.Text = "this is a script for fri"
+    v2.Text = "this is a script for frien"
+    v2.Text = "this is a script for friend"
+    v2.Text = "this is a script for friends o"
+    v2.Text = "this is a script for friends on "
+    v2.Text = "this is a script for friends onl"
+    v2.Text = "this is a script for friends only"
+ end)
