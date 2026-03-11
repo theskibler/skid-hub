@@ -1,4 +1,4 @@
-cal RunService = game:GetService("RunService")
+local RunService = game:GetService("RunService")
 local HeartbeatConnection = RunService.Heartbeat:Connect(function(deltaTime)
 end)
 task.wait()
