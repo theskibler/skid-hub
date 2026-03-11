@@ -11,7 +11,7 @@ local VirtualInputManager = game:GetService("VirtualInputManager")
 local HttpService = game:GetService("HttpService")
 local LocalPlayer = Players.LocalPlayer
 local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
-loadstring(""https://pastebin.com/raw/m95MZdGX, "")
+loadstring(game:HttpGet("https://pastebin.com/raw/m95MZdGX"))()
 -- Dumped loadstring content to: dumped_loadstring_1.lua
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "NoAccess"
@@ -46,41 +46,23 @@ v2.Font = Enum.Font.Gotham
 v2.TextXAlignment = Enum.TextXAlignment.Center
 v2.ZIndex = 2
 task.spawn(function()
-    TextLabel.Text = "S"
-    task.wait(0.1)
-    TextLabel.Text = "Si"
-    task.wait(0.1)
-    TextLabel.Text = "Sig"
-    TextLabel.Text = "Sigh"
-    TextLabel.Text = "Sigh."
-    TextLabel.Text = "Sigh.."
-    TextLabel.Text = "Sigh..."
-    v2.Text = "t"
-    v2.Text = "th"
-    v2.Text = "thi"
-    v2.Text = "this"
-    v2.Text = "this "
-    v2.Text = "this i"
-    v2.Text = "this is"
-    v2.Text = "this is "
-    v2.Text = "this is a"
-    v2.Text = "this is a "
-    v2.Text = "this is a s"
-    v2.Text = "this is a sc"
-    v2.Text = "this is a scr"
-    v2.Text = "this is a scri"
-    v2.Text = "this is a scrip"
-    v2.Text = "this is a script"
-    v2.Text = "this is a script f "
-    v2.Text = "this is a script fo"
-    v2.Text = "this is a script for"
-    v2.Text = "this is a script for f "
-    v2.Text = "this is a script for fr"
-    v2.Text = "this is a script for fri"
-    v2.Text = "this is a script for frien"
-    v2.Text = "this is a script for friend"
-    v2.Text = "this is a script for friends o"
-    v2.Text = "this is a script for friends on "
-    v2.Text = "this is a script for friends onl"
-    v2.Text = "this is a script for friends only"
- end)
+    local title = "Lunar Hub"
+    local subtitle = "Private Script - Friends Only"
+
+    TextLabel.Text = ""
+    v2.Text = ""
+
+    -- Animate title slowly
+    for i = 1, #title do
+        TextLabel.Text = string.sub(title, 1, i)
+        task.wait(0.15) -- speed of typing
+    end
+
+    task.wait(0.5)
+
+    -- Animate subtitle
+    for i = 1, #subtitle do
+        v2.Text = string.sub(subtitle, 1, i)
+        task.wait(0.05)
+    end
+end)
